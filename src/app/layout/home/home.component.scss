@@ -1,0 +1,29 @@
+.home-wrapper {
+  width: 100%;
+  margin-top: 8px;
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-evenly;
+    // overflow: hidden;
+    overflow-x: scroll;
+    // -ms-overflow-style: none; /* IE and Edge */
+    // scrollbar-width: none;
+  }
+  //   .card-container::-webkit-scrollbar {
+  //     display: none;
+  //   }
+  .compact-cards {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .extended-cards {
+    margin-top: 20px;
+  }
+  .content-card-container {
+    width: 100%;
+  }
+}

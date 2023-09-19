@@ -1,0 +1,55 @@
+<div class="home-wrapper">
+  <div class="card-container">
+    <div *ngFor="let card of cards">
+      <app-action-cards
+        [img]="card.imgUrl"
+        [desc]="card.desc"
+        [title]="card.title"
+      >
+      </app-action-cards>
+    </div>
+  </div>
+  <div class="extended-cards">
+    <div class="content-card-container">
+      <app-content-cards [viewMode]="'extended'">
+        <h4 title>Wellness Overview:</h4>
+        <h1 score>40</h1>
+        <p score-badge>overweight</p>
+        <p fire>fire</p>
+        <p upload>upload</p>
+        <div details-buttons>
+          <button>cta</button>
+        </div>
+        <div details-buttons>
+          <button>cta</button>
+        </div>
+        <div details-buttons>
+          <button>cta</button>
+        </div>
+      </app-content-cards>
+    </div>
+  </div>
+
+
+  <div class="compact-cards">
+    <div class="content-card-container">
+      <app-content-cards>
+        <h4 title>Overall skin score:</h4>
+        <p progress-bar>progress bars</p>
+        <h1 score>40</h1>
+        <p fire>fire</p>
+        <p upload>upload</p>
+        <p progress-time>20/40 weeks</p>
+      </app-content-cards>
+    </div>
+    <div class="content-card-container">
+      <app-content-cards>
+        <h4 title>Hair Tracker:</h4>
+        <p fire>fire</p>
+        <p upload>upload</p>
+        <p progress-bar>progress bars</p>
+        <p progress-time>40/10 weeks</p>
+      </app-content-cards>
+    </div>
+  </div>
+</div>
